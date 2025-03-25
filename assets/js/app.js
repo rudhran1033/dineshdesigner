@@ -39,12 +39,12 @@ window.addEventListener('scroll', function() {
         // Change text color to black
         navLinks.forEach(link => {
             link.style.color = 'black';
-            navbar.style.backgroundColor = 'white';
+            navbar.style.backgroundColor = '#e43c5c';
         });
     } else {
         // Change text color back to white when scrolled to top
         navLinks.forEach(link => {
-            link.style.color = 'white';
+            link.style.color = '#e43c5c';
             navbar.style.backgroundColor = 'transparent';
         });
     }
@@ -85,6 +85,8 @@ function showSlider(type) {
 emailjs.init('your_user_id');  // Replace with your User ID from EmailJS dashboard
 
 $(document).ready(function () {
+
+    
 
     setTimeout(() => {
         document.getElementById("loading").style.display = "none"; // Hide loading
