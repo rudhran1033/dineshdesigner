@@ -95,7 +95,9 @@ header nav a{
     transition: 0.2s;
     text-decoration: none;
 }
-
+b, strong{
+  color : #ffffff;
+}
 
 
 a.active{
@@ -232,6 +234,7 @@ a.active{
     cursor: pointer;
     font-size: 16px;
     border: 2px solid #fff;
+    /* background-color: #e43c5c; */
 }
 
 .content .btn button:nth-child(1){
@@ -502,7 +505,7 @@ svg {
   z-index: 997;
 }
 .header#header {
-      background-color: #fdfdfd !important;
+      /* background-color: transparent; */
 }
 a.icon-link {
   background-color: rgba(255, 255, 255, 0.2);
@@ -512,9 +515,14 @@ a.icon-link:hover {
   color:#e43c5c !important;
 }
 
-
-
-
+span.fw-bold {
+  font-size: xx-large;
+  color: floralwhite;
+}
+.bi-list::before {
+  content: "\f479";
+  color: white;
+}
 
 .header .logo {
   line-height: 1;
@@ -606,7 +614,7 @@ a.icon-link:hover {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--nav-hover-color);
+    background-color: #ffffff!important;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -706,7 +714,7 @@ a.icon-link:hover {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    background-color: #e43c5c;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -805,6 +813,7 @@ a.icon-link:hover {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+    
   }
 }
 
@@ -2979,13 +2988,7 @@ section,
     transition: ease-in-out 0.3s;
 }
 
-/* .icon-link.bi {
-  flex-shrink: 0;
-  width: 0em !important;
-  height: 0em !important;
-  fill: currentcolor;
-  transition: .2sease-in-out transform;
-} */
+
 
 .icon-link {
   display: inline-flex;
@@ -3015,25 +3018,7 @@ a.active {
 .icon-link>.bi {
   height: auto !important;
 }
-/* .float{
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    bottom: 61px;
-    right: 12px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 40px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
 
-.my-float .hide {
-	margin-top:16px;
-  
-} */
 .btn-floating:hover img {
   margin-bottom: -3px
 }

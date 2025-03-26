@@ -29,13 +29,14 @@ function resetTimeAnimation() {
     runningTime.style.animation = null 
     runningTime.style.animation = 'runningTime 7s linear 1 forwards'
 }
+    
 
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('header');
     const navLinks = document.querySelectorAll('.navmenu a');
     console.log(window.scrollY);
     // If the horizontal scroll position is greater than 0
-    if (window.scrollY > 780) {
+    if (window.scrollY > 50) {
         // Change text color to black
         navLinks.forEach(link => {
             link.style.color = 'black';
@@ -44,11 +45,13 @@ window.addEventListener('scroll', function() {
     } else {
         // Change text color back to white when scrolled to top
         navLinks.forEach(link => {
-            link.style.color = '#e43c5c';
-            navbar.style.backgroundColor = 'transparent';
+            link.style.color = '#ffffff';
+            navbar.style.backgroundColor = 'transparent';   
         });
     }
 });
+
+
 $(".home").offsetHeight("click", function(e) {
     e.preventDefault();
     $(".scroll-smooth").click();

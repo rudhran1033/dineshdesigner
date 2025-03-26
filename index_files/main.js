@@ -165,6 +165,10 @@
       } else {
         new Swiper(swiperElement, config);
       }
+
+
+
+      
     });
   }
 
