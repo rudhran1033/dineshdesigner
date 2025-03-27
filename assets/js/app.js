@@ -34,8 +34,7 @@ function resetTimeAnimation() {
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('header');
     const navLinks = document.querySelectorAll('.navmenu a');
-    console.log(window.scrollY);
-    // If the horizontal scroll position is greater than 0
+   
     if (window.scrollY > 50) {
         // Change text color to black
         navLinks.forEach(link => {
@@ -52,10 +51,10 @@ window.addEventListener('scroll', function() {
 });
 
 
-$(".home").offsetHeight("click", function(e) {
-    e.preventDefault();
-    $(".scroll-smooth").click();
-});
+// $(".home").offsetHeight("click", function(e) {
+//     e.preventDefault();
+//     $(".scroll-smooth").click();
+// });
 
 function showSlider(type) {
 
@@ -84,42 +83,21 @@ function showSlider(type) {
     resetTimeAnimation() // Reset the running time animation
 }
 
-// Initialize EmailJS
-emailjs.init('your_user_id');  // Replace with your User ID from EmailJS dashboard
+    // Initialize EmailJS
+//         emailjs.init('your_user_id');  // Replace with your User ID from EmailJS dashboard
 
-$(document).ready(function () {
-
-    
-
-    setTimeout(() => {
-        document.getElementById("loading").style.display = "none"; // Hide loading
-        document.getElementById("content").style.display = "block"; // Show content
-    }, 3000); // 3 seconds delay
+//        $(document).ready(function () {
 
     
-    $('#contactForm').submit(function (event) {
-        event.preventDefault(); // Prevent default form submission
 
-        // Get the form data
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var subject = $('#subject').val();
-        var message = $('#message').val();
+//     setTimeout(() => {
+//         document.getElementById("loading").style.display = "none"; // Hide loading
+//         document.getElementById("content").style.display = "block"; // Show content
+//     }, 3000); // 3 seconds delay
 
-        // Send the email using EmailJS
-        emailjs.send('your_service_id', 'your_template_id', {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        }).then(function (response) {
-            alert('Your message has been sent successfully!');
-            $('#contactForm')[0].reset(); // Reset the form after successful submission
-        }, function (error) {
-            alert('Failed to send your message. Please try again.');
-        });
-    });
-});
+    
+    
+// });
 
 
 // Start the initial animation 

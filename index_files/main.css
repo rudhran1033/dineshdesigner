@@ -150,7 +150,7 @@ a.active{
 }
 
 .carousel .list .item:nth-child(3){
-    left: 67%;
+    left: 100%;
 }
 
 .carousel .list .item:nth-child(4){
@@ -212,18 +212,17 @@ a.active{
 }
 
 .content .des{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    margin-left: 5px;
-
+  margin-top: 2px;
+  margin-bottom: 10px;
+  /* font-size: 18px; */
+  margin-left: 2px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
 
 .content .btn{
-    margin-left: 5px;
-
+    WIDTH: 75%;
+    margin-left: -22px;
     opacity: 0;
     animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
@@ -281,8 +280,8 @@ a.active{
 
 .arrows{
     position: absolute;
-    top: 80%;
-    right: 52%;
+    top: 85%;
+    right: 65%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
@@ -330,7 +329,9 @@ a.active{
     to{width: 100%;}
 
 }
+@media screen and (max-width: 999px) {
 
+}
 
 /* Responsive Design */
 
@@ -349,7 +350,13 @@ a.active{
     }
 
     .content .des{
-        font-size: 16px;
+      font-size: 12px;
+      WIDTH: 76%;
+    }
+    .content .btn{
+      WIDTH: 75%;
+      margin-left: -22px;
+      
     }
 
 }
@@ -362,17 +369,22 @@ a.active{
     }
 
     .list .item .content{
-        top: 50%;
+      top: 55%;
     }
 
     .content .title, .content .name{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .content .btn button{
         padding: 20px 30px;
         font-size: 8px;
     }
+    .content .btn {
+      WIDTH: 75%;
+      margin-left: -36px;
+    }
+ 
 }
 
 /* @media screen and (min-width: 200px) {
@@ -404,7 +416,7 @@ body {
 
 
 a {
-  color: var(--accent-color);
+  color: rgba(0, 0, 0, 0.384)!important;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -858,7 +870,13 @@ img.icon {
     margin-top: 3rem;
   }
 }
-
+@media (min-width:320px) and (max-width:480px) {
+  .a {
+    color: #838383f0;
+    text-decoration: none;
+    font-size: x-small;
+  }
+}
 .about .about-content .subtitle {
   font-size: 0.875rem;
   font-weight: 600;
@@ -894,7 +912,7 @@ img.icon {
 }
 
 .about .personal-info .info-item .label {
-  font-size: 0.875rem;
+  font-size: 100%;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
@@ -923,11 +941,7 @@ img.icon {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
 }
-a {
-  color: #838383f0;
-  text-decoration: none;
-  font-size: small;
-}
+
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
